@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "apl": "./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IAMOTZ/andela-portal-cmd.git"
@@ -21,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/IAMOTZ/andela-portal-cmd/issues"
   },
-  "homepage": "https://github.com/IAMOTZ/andela-portal-cmd#readme"
+  "homepage": "https://github.com/IAMOTZ/andela-portal-cmd#readme",
+  "dependencies": {
+    "command-exists": "^1.2.8",
+    "commander": "^2.19.0"
+  }
 }
