@@ -58,7 +58,7 @@ You should get a valid result if `apl` was properly installed.
 
 
 ## Limitation
-Because this tool makes use of the MacOS `open` command to open `URLs` in browsers, I can only guarantee that this tool will work fine on a MacOS.
+We have added support for windows and Linux machines, however, the Linux machine should have ``firefox``, and even with that I doubt it'll work.
 
 ## Inspiration
 I was inspired(primarily) by this chrome [extension](https://chrome.google.com/webstore/detail/andelaportals/aaepbgfnniojdkdkcihojbecgndhgoko?brand=CHBD&gclid=EAIaIQobChMI9K--0KPN3gIVz53tCh2sNw6eEAAYASABEgLWv_D_BwE&gclsrc=aw.ds) built by a friend(@andela-sjames).  
