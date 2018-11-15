@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+var os = require('os');
 var program = require('commander');
 const { exec } = require('child_process');
 const readline = require('readline');
@@ -13,6 +14,14 @@ if (!commandExistsSync('open')) {
 }
 
 const portalNames = Object.keys(portals).sort();
+
+const systemCommand = {
+    Darwin: 'open',
+    Linux: 'firefox',
+    Windows_NT: 'start'
+}
+
+const systemType = os.type();
 
 const listPortals = () => {
   portalNames.forEach((name) =>  {
@@ -34,7 +43,7 @@ program
       return console.log(`"${portalName}" is not a recognised portal.`);
 
     console.log(`Opening ${portals[portalName]}`)
-    exec(`open ${portals[portalName]}`, (error) => {
+    exec(`${systemCommand[systemType]} ${portals[portalName]}`, (error) => {
       if (error) return console.error(`exec error: ${error}`);
 
       console.log('Done!!');
