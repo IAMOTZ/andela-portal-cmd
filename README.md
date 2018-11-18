@@ -2,6 +2,8 @@
 A command line tool for the different resource at [portal.andela.com](portal.andela.com).
 > If you don't work at [Andela](andela.com), this tool might not be useful for you.
 
+![Demo](https://user-images.githubusercontent.com/26048536/48670075-94e7f100-eb11-11e8-8356-ad3e0429d97b.gif)
+
 ## Installation
 >  This tool was developed with Node version `8.11.1`. You should ensure you have something similar. 
 
