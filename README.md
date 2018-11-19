@@ -72,6 +72,12 @@ andela-portal-cmd :sparkles:
 
 
 ## Contribution
+To contribute to this project:
+- Fork this repository
+- Create a new branch for your contribution on the forked repo
+- Commit your changes with detailed commit messages
+- Raise a pull request from your forked repo against the master branch of this repo
+
 If you think there is anything that can get better in this project, please feel free to raise a Pull Request.
 
 ### What can you develop?
