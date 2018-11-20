@@ -66,4 +66,10 @@ program
     });
   });
 
+  const optionsLength = process.argv.length;
+  
+  if (optionsLength === 2) {
+    program.help();
+  }
+
 program.parse(process.argv);
