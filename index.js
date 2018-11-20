@@ -43,9 +43,11 @@ program
   .arguments('<portalName>')
   .action((portalName) => {
     portalName = portalName.toLocaleLowerCase();
-    if(!portalNames.includes(`${portalName.toLocaleLowerCase()}`))
-      return console.log(`"${portalName}" is not a recognised portal.`);
-    
+    if (!portalNames.includes(`${portalName.toLocaleLowerCase()}`)) {
+      console.log(`"${portalName}" is not a recognised portal.`);
+      return process.exit();
+    }
+  
     console.log(`Opening ${portals[portalName]}`)
     exec(`${systemCommand[systemType]} ${portals[portalName]}`, (error) => {
       if (error) return console.error(`exec error: ${error}`);
